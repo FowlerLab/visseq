@@ -1,8 +1,7 @@
 # VIS-seq Analysis
-Variant in situ Sequencing (VIS-seq) is a platform for optically profiling thousands of transgenically expressed protein-coding variants simultaneously. VIS-seq comprises a cassette with a promoter expressing a circular RNA containing one or more barcodes that are sequenced in situ to reveal the identity of the variant expressed in each cell and a second promoter expressing the protein variant. We used VIS-seq to create morphological profiles comprising a large set of measurements of the intensity, distribution and shape of different markers for >3,000 variants of lamin A and PTEN from ~11.4 million cell images. Lamin A variants were expressed in U2OS cells and PTEN variants in either iPS cells or derived neurons.
+Variant in situ Sequencing (VIS-seq) is a platform for optically profiling thousands of transgenically expressed protein-coding variants simultaneously. VIS-seq comprises a cassette with a promoter expressing a circular RNA containing one or more barcodes that are sequenced in situ to reveal the identity of the variant expressed in each cell and a second promoter expressing the protein variant. We used VIS-seq to create morphological profiles comprising a large set of measurements of the intensity, distribution and shape of different markers for >3,000 variants of lamin A and PTEN from ~11.4 million cell images. Lamin A variants were expressed in U2OS cells and PTEN variants in either iPS cells or derived neurons. Morphological profiles for both _LMNA_ and _PTEN_ variants can be further explored at [a link](visseq.gs.washington.edu).
 
-![image (2)](https://github.com/user-attachments/assets/668ecca1-0a21-4441-a56d-cf824b0ea06f)
-
+![FISSEQ_Fig1_website](https://github.com/user-attachments/assets/9cc712ce-51ca-48d2-b852-12710c6b8a34)
 
 This github repository contains the bash/python code (in the folder "analysis_tools") to convert the genotyped Cells x Features matrix output from STARCall (github.com/FowlerLab/starcall-workflow) to:
   1) Variant-level morphological profiles
@@ -10,6 +9,4 @@ This github repository contains the bash/python code (in the folder "analysis_to
   3) Median and EMD values for each variant and feature,
 as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper "Image-based, pooled phenotyping at nucleotide resolution reveals multidimensional, disease-specific variant effects" (BiorXiv link pending).
 
-Morphological profiles for both _LMNA_ and _PTEN_ variants can be further explored at visseq.gs.washington.edu.
-
-To download the input files needed for the Jupyter Notebooks, use this zenodo link: (pending)
+To download the input profiles/p-values/feature summary values/variant curation data needed to run Jupyter Notebooks, use this zenodo link: (pending). Then, run the Jupyter Notebooks to produce the paper figures for lamin A / PTEN portions of the paper (Figs 2-6).
