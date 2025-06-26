@@ -4,11 +4,11 @@ Variant in situ Sequencing (VIS-seq) is a platform for optically profiling thous
 <img width="1334" alt="Screenshot 2025-06-26 at 12 56 38 PM" src="https://github.com/user-attachments/assets/96fcc40d-3572-4e55-a191-166a9ac2300a" />
 
 
-This github repository contains the bash/python code (in the folder "analysis_tools") to convert the genotyped Cells x Features matrix output from STARCall (github.com/FowlerLab/starcall-workflow) to:
+This github repository contains the bash+python code (in the folder "analysis_tools", using the shell script generate_profiles.sh) to convert the genotyped Cells x Features matrix output from STARCall (github.com/FowlerLab/starcall-workflow) to:
   1) Variant-level morphological profiles
   2) KS-test p-values for each variant and feature, and
   3) Median and EMD values for each variant and feature,
 
-as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper "Image-based, pooled phenotyping at nucleotide resolution reveals multidimensional, disease-specific variant effects" (BiorXiv link pending).
+as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper "Image-based, pooled phenotyping at nucleotide resolution reveals multidimensional, disease-specific variant effects" (BiorXiv link pending). 
 
 To download the input profiles/p-values/feature summary values/variant curation data needed to run Jupyter Notebooks, use this zenodo link: (pending). Then, run the Jupyter Notebooks to produce the paper figures for lamin A / PTEN portions of the paper (Figs 2-6).
