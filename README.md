@@ -8,6 +8,7 @@ This github repository contains the bash/python code (in the folder "analysis_to
   1) Variant-level morphological profiles
   2) KS-test p-values for each variant and feature, and
   3) Median and EMD values for each variant and feature,
+
 as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper "Image-based, pooled phenotyping at nucleotide resolution reveals multidimensional, disease-specific variant effects" (BiorXiv link pending).
 
 To download the input profiles/p-values/feature summary values/variant curation data needed to run Jupyter Notebooks, use this zenodo link: (pending). Then, run the Jupyter Notebooks to produce the paper figures for lamin A / PTEN portions of the paper (Figs 2-6).
