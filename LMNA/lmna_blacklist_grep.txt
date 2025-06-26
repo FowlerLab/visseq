@@ -1,0 +1,13 @@
+ImageNumber
+ObjectNumber
+Object_Number
+BoundingBox
+Center
+AngularSecondMoment
+_X
+_Y
+_Z
+Orientation
+.1
+Puncta
+Line
