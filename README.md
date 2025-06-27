@@ -11,6 +11,8 @@ This github repository contains the bash+python code (in the folder "analysis_to
 
 as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper "Image-based, pooled phenotyping at nucleotide resolution reveals multidimensional, disease-specific variant effects" (BiorXiv link pending). 
 
+First begin by creating a new conda environment (visseq) with Python 3.11 and then using pip to install the packages in "requirements.txt".
+
 To generate profiles, run generate_profiles.sh with the following inputs:
   1) Experiment name
   2) Cells by features table (.cells_full.parquet file, output of STARCall; each cell should have an associated genotype)
