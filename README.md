@@ -11,7 +11,7 @@ This github repository contains the bash+python code (in the folder "analysis_to
 
 as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper "Image-based, pooled phenotyping at nucleotide resolution reveals multidimensional, disease-specific variant effects" (BiorXiv link pending). 
 
-First begin by creating a new conda environment (visseq) with Python 3.11 and then using pip to install the packages in "requirements.txt".
+First begin by creating a new conda environment (visseq) with Python 3.11 and then using pip to install the packages in "requirements.txt". One important dependency is [pycytominer](https://github.com/cytomining/pycytominer) which we use in our generation of variant profiles.
 
 To generate profiles, run generate_profiles.sh with the following inputs:
   1) Experiment name
