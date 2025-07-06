@@ -4,7 +4,7 @@ Variant in situ Sequencing (VIS-seq) is a platform for optically profiling thous
 <img width="1334" src="https://github.com/FowlerLab/visseq/blob/main/FISSEQ_Fig1_website_v2.png" />
 
 
-This github repository contains the bash+python code (in the folder "analysis_tools") to convert the genotyped Cells x Features matrix output from [STARCall](github.com/FowlerLab/starcall-workflow) to:
+This github repository contains the bash+python code (in the folder "analysis_tools") to convert the genotyped Cells x Features matrix output from [STARCall](https://github.com/FowlerLab/starcall-workflow) to:
   1) Variant-level morphological profiles
   2) KS-test p-values for each variant and feature, and
   3) Median and EMD values for each variant and feature,
