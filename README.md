@@ -1,7 +1,7 @@
 # VIS-seq Analysis
 Variant in situ Sequencing (VIS-seq) is a platform for optically profiling thousands of transgenically expressed protein-coding variants simultaneously. VIS-seq comprises a cassette with a promoter expressing a circular RNA containing one or more barcodes that are sequenced in situ to reveal the identity of the variant expressed in each cell and a second promoter expressing the protein variant. We used VIS-seq to create morphological profiles comprising a large set of measurements of the intensity, distribution and shape of different markers for >3,000 variants of lamin A and PTEN from ~11.4 million cell images. Lamin A variants were expressed in U2OS cells and PTEN variants in either iPS cells or derived neurons. Morphological profiles for both _LMNA_ and _PTEN_ variants can be further explored at [visseq.gs.washington.edu](https://visseq.gs.washington.edu).
 
-<img width="1334" alt="Screenshot 2025-06-26 at 12 56 38 PM" src="https://github.com/FowlerLab/visseq/blob/main/FISSEQ_Fig1_github.png" />
+<img width="1334" src="https://github.com/FowlerLab/visseq/blob/main/FISSEQ_Fig1_website_v2.png" />
 
 
 This github repository contains the bash+python code (in the folder "analysis_tools") to convert the genotyped Cells x Features matrix output from STARCall (github.com/FowlerLab/starcall-workflow) to:
