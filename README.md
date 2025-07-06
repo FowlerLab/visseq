@@ -9,7 +9,7 @@ This github repository contains the bash+python code (in the folder "analysis_to
   2) KS-test p-values for each variant and feature, and
   3) Median and EMD values for each variant and feature,
 
-as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper "Image-based, pooled phenotyping at nucleotide resolution reveals multidimensional, disease-specific variant effects" (BiorXiv link pending). 
+as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper ["Image-based, pooled phenotyping reveals multidimensional, disease-specific variant effects"](https://www.biorxiv.org/content/10.1101/2025.07.03.663081v1). 
 
 First begin by creating a new conda environment (visseq) with Python 3.11 and then using pip to install the packages in "requirements.txt". One important dependency is [pycytominer](https://github.com/cytomining/pycytominer) which we use in our generation of variant profiles.
 
@@ -22,4 +22,4 @@ To generate profiles, run generate_profiles.sh with the following inputs:
   6) Whether to z-score normalize (optional) to all variants (PTEN) or synonymous variants only (Lamin A)
   7) Name of the column (optional) encoding barcodes (PTEN='virtualBarcode' default; Lamin A='upBarcode')
 
-To directly download the input profiles/p-values/feature summary values/variant curation data needed to run Jupyter Notebooks, use this zenodo link: (pending). Then, run the Jupyter Notebooks to produce the paper figures for lamin A / PTEN portions of the paper (Figs 2-6).
+To directly download the input profiles/p-values/feature summary values/variant curation data needed to run Jupyter Notebooks, use this [zenodo link](https://zenodo.org/records/15787684). Then, run the Jupyter Notebooks to reproduce the paper figures for Lamin A / PTEN portions of the paper (Figs 2-6).
