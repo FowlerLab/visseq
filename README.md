@@ -4,14 +4,14 @@ Variant in situ Sequencing (VIS-seq) is a platform for optically profiling thous
 <img width="1334" src="https://github.com/FowlerLab/visseq/blob/main/FISSEQ_Fig1_website_v2.png" />
 
 
-This github repository contains the bash+python code (in the folder "analysis_tools") to convert the genotyped Cells x Features matrix output from STARCall (github.com/FowlerLab/starcall-workflow) to:
+This github repository contains the bash+python code (in the folder "analysis_tools") to convert the genotyped Cells x Features matrix output from [STARCall](github.com/FowlerLab/starcall-workflow) to:
   1) Variant-level morphological profiles
   2) KS-test p-values for each variant and feature, and
   3) Median and EMD values for each variant and feature,
 
-as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper ["Image-based, pooled phenotyping reveals multidimensional, disease-specific variant effects"](https://www.biorxiv.org/content/10.1101/2025.07.03.663081v1). 
+as well as the Jupyter Notebooks (in folders LMNA and PTEN) that contain the analysis for the paper ["Image-based, pooled phenotyping reveals multidimensional, disease-specific variant effects"](https://www.biorxiv.org/content/10.1101/2025.07.03.663081v1). The code used to generate variant-level AUROC scores is found at [https://github.com/FowlerLab/fisseqtools](https://github.com/FowlerLab/fisseqtools).
 
-First begin by creating a new conda environment (visseq) with Python 3.11 and then using pip to install the packages in "requirements.txt". One important dependency is [pycytominer](https://github.com/cytomining/pycytominer) which we use in our generation of variant profiles.
+First begin by creating a new conda environment (visseq) with Python 3.11 and then using pip -r to install the packages in "requirements.txt". One important dependency is [pycytominer](https://github.com/cytomining/pycytominer) which we use in our generation of variant profiles.
 
 To generate profiles, run generate_profiles.sh with the following inputs:
   1) Experiment name
