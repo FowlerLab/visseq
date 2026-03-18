@@ -48,7 +48,7 @@ def main():
     # Perform WT bootstrapping and remove features with poor reproducibility
     df_WT_list = sorted(glob(f"{args.ks_dir}/{exp}.WT.*.csv"))
     dfs_WT = [pd.read_csv(f, index_col=0) for f in df_WT_list]
-    df_WT = pd.concat(dfs_WT, axis=1)
+    df_WT = pd.concat(dfs_WT, axis=1).dropna(axis=0) #drop cells with NA EMDs
     
     # compute WT median and MAD for features
     non_blacklisted_features = []

@@ -13,14 +13,15 @@ def load_list_file(path):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument('--experiment',            required=True            )
-    p.add_argument('--cell-features',         required=True            )
-    p.add_argument('--output-dir',            required=True            )
-    p.add_argument('--metadata-columns-file'                           )
-    p.add_argument('--blacklist-grep-file'                             )
-    p.add_argument('--bc-threshold',    type=int, default=10           )
-    p.add_argument('--variant-bc-threshold', type=int, default=4       )
-    p.add_argument('--barcode-name', type=str, default='virtualBarcode')
+    p.add_argument('--experiment',            required=True                     )
+    p.add_argument('--cell-features',         required=True                     )
+    p.add_argument('--output-dir',            required=True                     )
+    p.add_argument('--metadata-columns-file'                                    )
+    p.add_argument('--blacklist-grep-file'                                      )
+    p.add_argument('--bc-threshold',          type=int, default=10              )
+    p.add_argument('--variant-bc-threshold',  type=int, default=4               )
+    p.add_argument('--barcode-name',          type=str, default='virtualBarcode')
+    p.add_argument('--edit-distance',         type=int, default=1               )
     args = p.parse_args()
 
     os.makedirs(args.output_dir, exist_ok=True)
@@ -94,7 +95,8 @@ def main():
     )
     variants_ok = bpv.query('barcode_num >= @args.variant_bc_threshold').index
 
-    df_called = full_df.query('editDistance in [0,1]')
+    edit_distance_allowed = list(range(args.edit_distance))
+    df_called = full_df.query('editDistance in @edit_distance_allowed')
     df_filt   = df_called[df_called[args.barcode_name].isin(bc_ok) & df_called['aaChanges'].isin(variants_ok)]
 
     # save population for metrics
